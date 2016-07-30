@@ -20,7 +20,6 @@
 		103C4CB81D128E6F00984DAC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 103C4CB61D128E6F00984DAC /* LaunchScreen.storyboard */; };
 		103C4CC31D128E6F00984DAC /* OnTheMapTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 103C4CC21D128E6F00984DAC /* OnTheMapTests.swift */; };
 		103C4CCE1D128E6F00984DAC /* OnTheMapUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 103C4CCD1D128E6F00984DAC /* OnTheMapUITests.swift */; };
-		103C4CDC1D128FAB00984DAC /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 103C4CDB1D128FAB00984DAC /* LoginViewController.swift */; };
 		103C4CE31D1350E500984DAC /* StudentLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 103C4CE21D1350E500984DAC /* StudentLocation.swift */; };
 		103C4CE51D1354F000984DAC /* ParseConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 103C4CE41D1354F000984DAC /* ParseConstants.swift */; };
 		103C4CE71D13561200984DAC /* ParseClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 103C4CE61D13561200984DAC /* ParseClient.swift */; };
@@ -30,6 +29,7 @@
 		103C4CF41D16C58000984DAC /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 103C4CF31D16C58000984DAC /* User.swift */; };
 		1084BDC51D23113D007106FC /* DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1084BDC41D23113D007106FC /* DataSource.swift */; };
 		1084BDC71D23147F007106FC /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1084BDC61D23147F007106FC /* UIViewControllerExtension.swift */; };
+		10D271BE1D4C8FF400640DF1 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10D271BD1D4C8FF400640DF1 /* LoginViewController.swift */; };
 		10E36E8D1D1FCC7000D25337 /* refresh.png in Resources */ = {isa = PBXBuildFile; fileRef = 10E36E8C1D1FCC7000D25337 /* refresh.png */; };
 		10E36E8F1D1FCF9E00D25337 /* logout.png in Resources */ = {isa = PBXBuildFile; fileRef = 10E36E8E1D1FCF9E00D25337 /* logout.png */; };
 		10E36E941D20AA7F00D25337 /* FacebookConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10E36E931D20AA7F00D25337 /* FacebookConstants.swift */; };
@@ -74,7 +74,6 @@
 		103C4CC91D128E6F00984DAC /* OnTheMapUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OnTheMapUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		103C4CCD1D128E6F00984DAC /* OnTheMapUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnTheMapUITests.swift; sourceTree = "<group>"; };
 		103C4CCF1D128E6F00984DAC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		103C4CDB1D128FAB00984DAC /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginViewController.swift; path = ../LoginViewController.swift; sourceTree = "<group>"; };
 		103C4CE21D1350E500984DAC /* StudentLocation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StudentLocation.swift; sourceTree = "<group>"; };
 		103C4CE41D1354F000984DAC /* ParseConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParseConstants.swift; sourceTree = "<group>"; };
 		103C4CE61D13561200984DAC /* ParseClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParseClient.swift; sourceTree = "<group>"; };
@@ -84,6 +83,7 @@
 		103C4CF31D16C58000984DAC /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		1084BDC41D23113D007106FC /* DataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataSource.swift; sourceTree = "<group>"; };
 		1084BDC61D23147F007106FC /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
+		10D271BD1D4C8FF400640DF1 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		10E36E8C1D1FCC7000D25337 /* refresh.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = refresh.png; sourceTree = "<group>"; };
 		10E36E8E1D1FCF9E00D25337 /* logout.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logout.png; sourceTree = "<group>"; };
 		10E36E931D20AA7F00D25337 /* FacebookConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FacebookConstants.swift; sourceTree = "<group>"; };
@@ -206,8 +206,8 @@
 			children = (
 				100F9EF01D1A1866004F065F /* OnTheMapTabBarController.swift */,
 				100F9EE61D17E7A8004F065F /* MapViewController.swift */,
+				10D271BD1D4C8FF400640DF1 /* LoginViewController.swift */,
 				100F9EEA1D1959D5004F065F /* StudentTableViewCell.swift */,
-				103C4CDB1D128FAB00984DAC /* LoginViewController.swift */,
 				100F9EEC1D195D62004F065F /* StudentsListTableViewController.swift */,
 				100F9EEE1D1A01E3004F065F /* PostLocationViewController.swift */,
 				1084BDC61D23147F007106FC /* UIViewControllerExtension.swift */,
@@ -391,6 +391,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				10D271BE1D4C8FF400640DF1 /* LoginViewController.swift in Sources */,
 				100F9EE71D17E7A8004F065F /* MapViewController.swift in Sources */,
 				1084BDC51D23113D007106FC /* DataSource.swift in Sources */,
 				1084BDC71D23147F007106FC /* UIViewControllerExtension.swift in Sources */,
@@ -401,7 +402,6 @@
 				100F9EEF1D1A01E3004F065F /* PostLocationViewController.swift in Sources */,
 				103C4CEC1D13679200984DAC /* UdacityConstants.swift in Sources */,
 				103C4CF21D15ED5E00984DAC /* Response.swift in Sources */,
-				103C4CDC1D128FAB00984DAC /* LoginViewController.swift in Sources */,
 				103C4CEA1D13676000984DAC /* UdacityClient.swift in Sources */,
 				103C4CAE1D128E6F00984DAC /* AppDelegate.swift in Sources */,
 				103C4CE71D13561200984DAC /* ParseClient.swift in Sources */,
